@@ -1,0 +1,117 @@
+[
+    {
+        "entity_name": "example",
+        "description": "Optional",
+        "fields": [
+            {
+                "field_name": "example_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "title",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "parent_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "example",
+                    "join_column": "parent_id"
+                }
+            }
+        ]
+    },
+    {
+        "entity_name": "example1",
+        "description": "Optional",
+        "fields": [
+            {
+                "field_name": "example1_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "title",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "age",
+                "field_data_type": "Integer",
+                "attributes": {}
+            }
+        ]
+    },
+    {
+        "entity_name": "example2",
+        "description": "Optional",
+        "fields": [
+            {
+                "field_name": "example2_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "title",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "user_id",
+                "field_data_type": "Integer",
+                "attributes": {}
+            },
+            {
+                "field_name": "age",
+                "field_data_type": "Integer",
+                "attributes": {}
+            }
+        ]
+    },
+    {
+        "entity_name": "example17",
+        "description": "Testing FK validation test and",
+        "fields": [
+            {
+                "field_name": "example17_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "name_1",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "title_2",
+                "field_data_type": "Text",
+                "attributes": {}
+            },
+            {
+                "field_name": "age_1",
+                "field_data_type": "Integer",
+                "attributes": {}
+            },
+            {
+                "field_name": "user_id_1",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "example2",
+                    "join_column": "user_id_1"
+                }
+            }
+        ]
+    }
+]
